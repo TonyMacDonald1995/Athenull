@@ -26,16 +26,6 @@
 
 ---
 
-## 📦 Dependencies
-
-- Kotlin 1.9+
-- Ktor (Web Framework)
-- Exposed (SQL Database ORM)
-- SQLite / MySQL / PostgreSQL JDBC drivers
-- Gradle (Build System)
-
----
-
 ## 🛠️ Setup
 
 1. Clone the repo  

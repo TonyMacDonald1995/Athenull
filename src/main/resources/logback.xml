@@ -1,0 +1,19 @@
+<configuration>
+    <!-- Set root log level -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <!-- Console appender -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Silence Netty debug spam -->
+    <logger name="io.netty" level="WARN"/>
+    <logger name="io.ktor" level="INFO"/>
+    <logger name="org.eclipse.jetty" level="WARN"/>
+    <logger name="org.apache" level="WARN"/>
+</configuration>
